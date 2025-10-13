@@ -1,0 +1,144 @@
+header, 
+nav, 
+footer {
+    background-color: black;
+    color: #fd0404;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: #fd0404;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: bold;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: black;
+    color: #fd0404;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    width: 100%;
+    height: auto;
+}
+
+section {
+    border: 1px #fd0404;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-position: inside;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fd0404;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-hover:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-glow {
+    background: #fd0404;
+    color: white;
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 20px #fd0404;
+}
+
+.gallery {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex; /* Aligns images in a horizontal line */
+    flex-wrap: wrap; /* Moves images to the next line if there isn't enough space */
+    gap: 50px; /* Adds space between each image */
+    justify-content: center;
+}
+
+.gallery img {
+    width: 180px; /* Sets each image's width */
+    height: 120px; /* Sets each image's height */
+    object-fit: cover; /* Ensure the image fills the box without distortion */
+    border-radius: 6px; /* Rounds the image corners slightly */
+    transition: all 0.3s; /* Smoothly animates changes on hover */ 
+}
+
+.hover-one:hover {
+    Filter: drop-shadow(16px 16px 20px red) invert(75%); /* Inverts the colors of the image by 75% */
+    box-shadow: 0 8px 8px gray; /* Adds a soft shadow behind the image (when hovered) */
+    opacity: 1; /* Keeps full opacity throughout transition */
+}
+
+.hover-two:hover {
+    filter: blur(5px); /* Blurs the image */
+    transition: filter 0.4s, transform 0.3s; /*Smoothly animates both filter (blur) and movement */
+    transform: scale(1.65); /* Slightly enlarges the image */
+}
+
+.hover-three:hover {
+    Filter: hue-rotate(90deg); /* Slightly enlarges image on hover */
+    opacity: 0.5; /* Makes the image slightly transparent */
+}
+
+/* Project 3: Styled Quote Box */
+.quote-section{
+    text-align: center; /* Centers all text and elements inside the section */
+    max-width: 30%; /* Limits the section's width to 30% of the page */
+}
+
+.quote-section h3{
+    color: #fd0404; /* Changes the H3 text to a nice shade of red. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Uses Franklin Gothic Medium and the classic serif font because the original font (Impact) looked smashed together and borderline unreadable. */
+    margin-bottom: 15px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes all heading 3 letters uppercase */
+    letter-spacing: 1px; /* Adds small spacing between letters for readability factor*/
+}
+/* Main quote box styling */
+.quote-box{
+    font-family: 'Georgia', serif; /* Uses Georgia and the classic serif font for a refined look */
+    font-style: italic; /* Italicizes text to make it look like an actual quote */
+    background-image: linear-gradient(135deg, rgba(179, 0, 0, 1) 0%, rgba(255, 0, 8, 1) 50%), url('https://www.transparenttextures.com/patterns/light-mesh.png');
+    background-blend-mode: multiply; /* Blends the texture softly into the color */
+    padding: 20px 30px; /* Adds inner spacing around the quote */
+    border-left: 6px solid #fd0404; /* Adds a thick, dark brown stripe on the left */
+    border-radius: 10px; /* Rounds the corners slightly for a softer look */
+    box-shadow: 0 4px 10px #fd0404; /* Adds a light shadow for depth */
+    color: #2e2b26; /* Sets the quote text to a charcoal gray */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.quote-box:hover{
+    transform: translateY(-4px); /* Slightly lift the box when hovered */
+    box-shadow: 0 6px 14px #fd0404; /* Makes the shadow deeper to enhance the lift */
+    background-image: linear-gradient (135deg, rgba(179, 0, 0, 1) 0%, rgba(255, 0, 8, 1) 50%), url('https://www.transparenttextures.com/patterns/light-mesh.png');
+}
+
+.quote-box cite{
+    display: block; /* Makes the citation appear on its own line */
+    margin-top: 12px; /* adds space above the author's name */
+    font-style: normal; /* Removes italics to contrast the quote text */
+    font-weight: bold; /* Makes the author's name stand out by making it bold */
+    color: #2e2b26; /*Sets a charcoal gray for the author's name. */
+    text-align: right; /* Aligns the author's name to the right edge */
+    letter-spacing: 0.5px; /* Adds small spacing between letters for balance */
+}

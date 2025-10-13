@@ -1,0 +1,54 @@
+header,
+nav,
+footer {
+    background-color: black;
+    /* black background */
+    color: white;
+    /* white text so it's readable */
+    text-align: center;
+    /* center text */
+    width: 100%;
+    /* ensures stretches across the screen */
+}
+
+main {
+    background-color: #000;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    color:#fd0404;
+}
+
+.roundedImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.centerContent {
+    display: flex;
+    /* enables flexbox */
+    flex-direction: column;
+    /* stack sections vertically */
+    align-items: center;
+    /* center items horiontally */
+    justify-content: center;
+    /* center items vertically */
+    text-align: center;
+    /* center text inside sections */
+}
+
+.aboutBox {
+    border: 2px solid #fd0404; /* red border around the box */
+    padding: 20px; /* space inside the box */
+    margin: 20px auto; /* spacing around the box */
+    width: 70%; /* adjust width as needed */
+    text-align: left; /* left-aligns everything */
+    background-color: #000000;
+    color: #fd0404;
+    border-radius: 8px; /* rounded corners */
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
