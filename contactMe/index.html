@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+        <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="https://www.windows93.net/">My Favorite Website</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Funny Button</a>
+            <a href="cssProjects/index.html">CSS Projects</a>
+        </nav>
+        </header>
+
+        <section>
+            <h2> Introduction to the page</h2>
+            <p> This is a simulation aof a contact page, this does not actually work.</p>
+        </section>
+
+        <section>
+            <form>
+                <div>
+                <h2>Contact Me</h2>
+                <label for="name">Name: *</label>
+                <input type="text" id="name" placeholer="Your Name" required>
+
+                <label for="email">Email: *</label>
+                <input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="enter a password">
+
+                <label for="Phone">Phone Number:</label>
+                <input type="tel" id="Phone" placeholder="(256)765-1000" required>
+
+                <label for="Website">Website: *</label>
+                <input type="url" id="phone" placeholder="https://google.com/" required>
+
+                <label for="Age">Age: *</label>
+                <input type="number" id="Age" min="1" max="120" placeholder="20" required>
+                
+                <label for"DoB">Date of Birth: *</label>
+                <input type="date" id="DoB" required>
+
+                <label for="time">Preferred Contact Time:</label>
+                <input type="time" id="time">
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" value="#000000">
+
+                <label for="range">Interest level (1-10): *</label>
+                <input type="range" id="range" min="1" max="10" value="5" required>
+
+                <label>Preferred Contact Method:</label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="contactMethod" value="Email">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="Phone">
+                        Phone
+                    </label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="text">
+                        Text
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="service" value="Web Design">
+                        Web Design
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service" value="consulting">
+                        Consulting
+                    </label>
+                    <label>
+                        <input type="checkbox" name="service" value="Other">
+                        Other
+                    </label>
+                </div>
+                <label for="topic">Topic:</label>
+                <select id="topic">
+                    <option value="General">General Inquiry</option>
+                    <option value="Support">Support</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+                <button type="Submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>Created by Austin Laird</footer>
+</body>
+</html>
