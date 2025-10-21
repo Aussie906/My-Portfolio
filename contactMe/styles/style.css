@@ -1,0 +1,73 @@
+header,
+nav,
+footer {
+    background-color: black;
+    /* black background */
+    color: white;
+    /* white text so it's readable */
+    text-align: center;
+    /* center text */
+    width: 100%;
+    /* ensures stretches across the screen */
+}
+
+main {
+    background-color: #000;
+    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+    color:#fd0404;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-form {
+    background: #000000;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #fd0404;
+    width: 400px;
+
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #fd0404;
+}
+
+.contact-form input[type="color"]
+.contact-form input[type="range"] {
+    padding: 2px;
+}
+
+.btn-glow {
+    width: 100%;
+    background: #fd0404;
+    color: #000000;
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+    cursor:pointer;
+}
+
+.inline-options {
+    display: flex;
+    gap: 10px;
+}
+

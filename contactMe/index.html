@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/style.css"
 </head>
 <body>
         <header>
@@ -11,17 +12,18 @@
         <nav>
             <a href="https://www.windows93.net/">My Favorite Website</a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Funny Button</a>
-            <a href="cssProjects/index.html">CSS Projects</a>
+            <a href="../cssProjects/index.html">CSS Projects</a>
+            <a href="../index.html">Home Page</a>
         </nav>
         </header>
-
+        <main>
         <section>
             <h2> Introduction to the page</h2>
             <p> This is a simulation aof a contact page, this does not actually work.</p>
         </section>
 
         <section>
-            <form>
+            <form class="contact-form">
                 <div>
                 <h2>Contact Me</h2>
                 <label for="name">Name: *</label>
@@ -42,7 +44,7 @@
                 <label for="Age">Age: *</label>
                 <input type="number" id="Age" min="1" max="120" placeholder="20" required>
                 
-                <label for"DoB">Date of Birth: *</label>
+                <label for="DoB">Date of Birth: *</label>
                 <input type="date" id="DoB" required>
 
                 <label for="time">Preferred Contact Time:</label>
@@ -56,7 +58,7 @@
 
                 <label>Preferred Contact Method:</label>
                 </div>
-                <div>
+                <div class="inline-options">
                     <label>
                         <input type="radio" name="contactMethod" value="Email">
                         Email
@@ -70,7 +72,7 @@
                         Text
                     </label>
                 </div>
-                <div>
+                <div class="inline-options">
                     <label>
                         <input type="checkbox" name="service" value="Web Design">
                         Web Design
@@ -85,19 +87,21 @@
                     </label>
                 </div>
                 <label for="topic">Topic:</label>
+                <div class="inline-options">
                 <select id="topic">
                     <option value="General">General Inquiry</option>
                     <option value="Support">Support</option>
                     <option value="Feedback">Feedback</option>
                 </select>
+                </div>
                 
                 <label for="message">Message:</label>
                 <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
-                <button type="Submit">Submit</button>
+                <button class="btn-glow">Submit</button>
             </form>
         </section>
-
+        </main>
         <footer>Created by Austin Laird</footer>
 </body>
 </html>
