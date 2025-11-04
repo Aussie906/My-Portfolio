@@ -71,3 +71,29 @@ body {
     gap: 10px;
 }
 
+#resultContainer {
+    margin-top: 10px;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #fd0404;
+    width: 80%;
+    max-width: 700px;
+}
+
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultTable th, #resultTable td {
+    border: 1px solid #fd0404;
+    padding: 10px;
+    text-align: left;
+}
+
+#resultTable th {
+    background-color:#000000;
+    color: #fd0404;
+}
+
