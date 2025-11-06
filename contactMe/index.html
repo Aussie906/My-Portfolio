@@ -98,17 +98,17 @@
                 <label for="message">Message:</label>
                 <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
 
-                <button class="btn-glow">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </section>
-        <section id="resultContainer">
+        <section id="resultContainer" style="display:none;">
             <h2> Submitted Information </h2>
             <table id="resultTable">
                 <thead>
                     <tr>
                         <th>Field</th>
                         <th>Value</th>
-                        <!--Javascript will add more rows here-->
+                        <tbody><!--Javascript will add more rows here--></tbody>
                     </tr>
                 </thead>
             </table>
@@ -117,4 +117,5 @@
         <footer>Created by Austin Laird</footer>
         <script src="scripts/script.js"></script>
 </body>
+
 </html>
